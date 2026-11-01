@@ -1,0 +1,235 @@
+{
+  "task_name": "ai_generated_45_degree_rotation_and_bowing",
+  "description": "初期姿勢から45度ずつ旋回し、各方向で関節を一つずつ使って30度お辞儀する。一周して正面を向いたときだけ120度深くお辞儀し、初期姿勢へ戻る。",
+  "steps": [
+    {
+      "action": "move_arm",
+      "name": "初期姿勢",
+      "positions": [0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "action": "move_gripper",
+      "name": "グリッパーを初期値へ",
+      "position": 0.0
+    },
+
+    {
+      "action": "move_arm",
+      "name": "45度旋回",
+      "positions": [0.7854, 0.0, 0.0, 0.0]
+    },
+    {
+      "action": "move_arm",
+      "name": "45度方向で10度お辞儀：関節2",
+      "positions": [0.7854, -0.1745, 0.0, 0.0]
+    },
+    {
+      "action": "move_arm",
+      "name": "45度方向で20度お辞儀：関節3",
+      "positions": [0.7854, -0.1745, -0.1745, 0.0]
+    },
+    {
+      "action": "move_arm",
+      "name": "45度方向で30度お辞儀：関節4",
+      "positions": [0.7854, -0.1745, -0.1745, -0.1745]
+    },
+    {
+      "action": "move_arm",
+      "name": "45度方向のお辞儀から復帰",
+      "positions": [0.7854, 0.0, 0.0, 0.0]
+    },
+
+    {
+      "action": "move_arm",
+      "name": "90度旋回",
+      "positions": [1.5708, 0.0, 0.0, 0.0]
+    },
+    {
+      "action": "move_arm",
+      "name": "90度方向で10度お辞儀：関節2",
+      "positions": [1.5708, -0.1745, 0.0, 0.0]
+    },
+    {
+      "action": "move_arm",
+      "name": "90度方向で20度お辞儀：関節3",
+      "positions": [1.5708, -0.1745, -0.1745, 0.0]
+    },
+    {
+      "action": "move_arm",
+      "name": "90度方向で30度お辞儀：関節4",
+      "positions": [1.5708, -0.1745, -0.1745, -0.1745]
+    },
+    {
+      "action": "move_arm",
+      "name": "90度方向のお辞儀から復帰",
+      "positions": [1.5708, 0.0, 0.0, 0.0]
+    },
+
+    {
+      "action": "move_arm",
+      "name": "135度旋回",
+      "positions": [2.3562, 0.0, 0.0, 0.0]
+    },
+    {
+      "action": "move_arm",
+      "name": "135度方向で10度お辞儀：関節2",
+      "positions": [2.3562, -0.1745, 0.0, 0.0]
+    },
+    {
+      "action": "move_arm",
+      "name": "135度方向で20度お辞儀：関節3",
+      "positions": [2.3562, -0.1745, -0.1745, 0.0]
+    },
+    {
+      "action": "move_arm",
+      "name": "135度方向で30度お辞儀：関節4",
+      "positions": [2.3562, -0.1745, -0.1745, -0.1745]
+    },
+    {
+      "action": "move_arm",
+      "name": "135度方向のお辞儀から復帰",
+      "positions": [2.3562, 0.0, 0.0, 0.0]
+    },
+
+    {
+      "action": "move_arm",
+      "name": "180度旋回",
+      "positions": [3.1416, 0.0, 0.0, 0.0]
+    },
+    {
+      "action": "move_arm",
+      "name": "180度方向で10度お辞儀：関節2",
+      "positions": [3.1416, -0.1745, 0.0, 0.0]
+    },
+    {
+      "action": "move_arm",
+      "name": "180度方向で20度お辞儀：関節3",
+      "positions": [3.1416, -0.1745, -0.1745, 0.0]
+    },
+    {
+      "action": "move_arm",
+      "name": "180度方向で30度お辞儀：関節4",
+      "positions": [3.1416, -0.1745, -0.1745, -0.1745]
+    },
+    {
+      "action": "move_arm",
+      "name": "180度方向のお辞儀から復帰",
+      "positions": [3.1416, 0.0, 0.0, 0.0]
+    },
+
+    {
+      "action": "move_arm",
+      "name": "225度旋回",
+      "positions": [-2.3562, 0.0, 0.0, 0.0]
+    },
+    {
+      "action": "move_arm",
+      "name": "225度方向で10度お辞儀：関節2",
+      "positions": [-2.3562, -0.1745, 0.0, 0.0]
+    },
+    {
+      "action": "move_arm",
+      "name": "225度方向で20度お辞儀：関節3",
+      "positions": [-2.3562, -0.1745, -0.1745, 0.0]
+    },
+    {
+      "action": "move_arm",
+      "name": "225度方向で30度お辞儀：関節4",
+      "positions": [-2.3562, -0.1745, -0.1745, -0.1745]
+    },
+    {
+      "action": "move_arm",
+      "name": "225度方向のお辞儀から復帰",
+      "positions": [-2.3562, 0.0, 0.0, 0.0]
+    },
+
+    {
+      "action": "move_arm",
+      "name": "270度旋回",
+      "positions": [-1.5708, 0.0, 0.0, 0.0]
+    },
+    {
+      "action": "move_arm",
+      "name": "270度方向で10度お辞儀：関節2",
+      "positions": [-1.5708, -0.1745, 0.0, 0.0]
+    },
+    {
+      "action": "move_arm",
+      "name": "270度方向で20度お辞儀：関節3",
+      "positions": [-1.5708, -0.1745, -0.1745, 0.0]
+    },
+    {
+      "action": "move_arm",
+      "name": "270度方向で30度お辞儀：関節4",
+      "positions": [-1.5708, -0.1745, -0.1745, -0.1745]
+    },
+    {
+      "action": "move_arm",
+      "name": "270度方向のお辞儀から復帰",
+      "positions": [-1.5708, 0.0, 0.0, 0.0]
+    },
+
+    {
+      "action": "move_arm",
+      "name": "315度旋回",
+      "positions": [-0.7854, 0.0, 0.0, 0.0]
+    },
+    {
+      "action": "move_arm",
+      "name": "315度方向で10度お辞儀：関節2",
+      "positions": [-0.7854, -0.1745, 0.0, 0.0]
+    },
+    {
+      "action": "move_arm",
+      "name": "315度方向で20度お辞儀：関節3",
+      "positions": [-0.7854, -0.1745, -0.1745, 0.0]
+    },
+    {
+      "action": "move_arm",
+      "name": "315度方向で30度お辞儀：関節4",
+      "positions": [-0.7854, -0.1745, -0.1745, -0.1745]
+    },
+    {
+      "action": "move_arm",
+      "name": "315度方向のお辞儀から復帰",
+      "positions": [-0.7854, 0.0, 0.0, 0.0]
+    },
+
+    {
+      "action": "move_arm",
+      "name": "正面へ戻る",
+      "positions": [0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "action": "move_arm",
+      "name": "正面で40度お辞儀：関節2",
+      "positions": [0.0, -0.6981, 0.0, 0.0]
+    },
+    {
+      "action": "move_arm",
+      "name": "正面で80度お辞儀：関節3",
+      "positions": [0.0, -0.6981, -0.6981, 0.0]
+    },
+    {
+      "action": "move_arm",
+      "name": "正面で120度お辞儀：関節4",
+      "positions": [0.0, -0.6981, -0.6981, -0.6981]
+    },
+    {
+      "action": "move_arm",
+      "name": "正面の深いお辞儀から復帰",
+      "positions": [0.0, 0.0, 0.0, 0.0]
+    },
+
+    {
+      "action": "move_arm",
+      "name": "アームを初期姿勢へ復帰",
+      "positions": [0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "action": "move_gripper",
+      "name": "グリッパーを初期値へ復帰",
+      "position": 0.0
+    }
+  ]
+}
